@@ -383,20 +383,6 @@ body{
   line-height: 1.6;
   margin-bottom: 20px;
 }
-.feature-btn {
-  display: inline-block;
-  background: #937753;
-  color: #fff;
-  padding: 10px 20px;
-  border-radius: 25px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: 0.3s;
-}
-
-.feature-btn:hover {
-  background: #7b6142;
-}
 .features-cards {
 
   justify-content: center;
