@@ -562,3 +562,43 @@ flex-direction: column;
     color:#b8b8b8;
 }
 /* ************************************************************************************************** */
+
+/* =======================
+   FEATURES ANIMATION
+======================= */
+
+/* الحالة الافتراضية قبل الظهور */
+.feature-card-single {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.6s ease;
+}
+
+/* لما تظهر */
+.feature-card-single.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* =======================
+   FEATURE CARD HOVER
+======================= */
+
+.feature-card-single {
+  transition: all 0.3s ease;
+}
+
+/* عند المرور بالماوس */
+.feature-card-single:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+}
+
+/* حركة الصورة داخل الكرت */
+.feature-card-image img {
+  transition: transform 0.4s ease;
+}
+
+.feature-card-single:hover .feature-card-image img {
+  transform: scale(1.05);
+}
